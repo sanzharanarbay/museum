@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','DemoController@index');
 Route::get('/about','DemoController@about');
-Route::get('/menu','DemoController@menu');
-Route::get('/reservation','DemoController@reservation');
-Route::get('/staff','DemoController@staff');
+Route::get('/events','DemoController@events');
+Route::get('/museumitems','DemoController@museumitems');
+Route::get('/news','DemoController@news');
 Route::get('/gallery','DemoController@gallery');
 Route::get('/contact','DemoController@contact');
 

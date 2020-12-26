@@ -1,35 +1,48 @@
-<!-- Start header -->
-<header class="top-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{asset('assets/images/logo.png')}}" alt="Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbars-rs-food">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/menu')}}">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/about')}}">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/reservation')}}">Reservation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/staff')}}">Staff</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/gallery')}}">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/contact')}}">Contact</a></li>
-                    <li class="nav-item">
-                        @if (Route::has('login'))
-                            @auth
-                                <a class="nav-link" href="{{ url('/home') }}">Home</a>
-                            @else
-                                <a class="nav-link" href="{{ route('login') }}">Login</a>
-                            @endauth
-                        @endif
-                    </li>
-
+<header id="header" id="home">
+    <div class="container header-top">
+        <div class="row">
+            <div class="col-6 top-head-left">
+                <ul>
+                    <li><a href="{{url('/')}}">Visit Us</a></li>
+                    <li><a href="#">Buy Ticket</a></li>
+                </ul>
+            </div>
+            <div class="col-6 top-head-right">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-</header>
-<!-- End header -->
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="{{url('/')}}"><img src="{{asset('frontend/assets/img/logo.png')}}" alt="Logo" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="{{url('/')}}">Home</a></li>
+                    <li><a href="{{url('/about')}}">About</a></li>
+                    <li><a href="{{url('/gallery')}}">Gallery</a></li>
+                    <li><a href="{{url('/events')}}">Events</a></li>
+                    <li><a href="{{url('/museumitems')}}">Museum Items</a></li>
+                    <li><a href="{{url('/news')}}">News</a></li>
+                    <li><a href="{{url('/contact')}}">Contact</a></li>
+                    <li>
+                        @if (Route::has('login'))
+                            @auth
+                                <a  href="{{ url('/home') }}">Home</a>
+                            @else
+                                <a  href="{{ route('login') }}">Login</a>
+                            @endauth
+                        @endif
+                    </li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->

@@ -9,174 +9,149 @@
 
 @section('content')
 
-    <!-- Start header -->
-    <div class="all-page-title page-breadcrumb">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Us</h1>
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        About Us
+                    </h1>
+                    <p class="text-white link-nav"><a href="{{url('/')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> About Us</a></p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End header -->
+    </section>
+    <!-- End banner Area -->
 
-    <!-- Start About -->
-    <div class="about-section-box">
+    <!-- Start quote Area -->
+    <section class="quote-area pt-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <img src="{{asset('assets/images/about-img.jpg')}}" alt="" class="img-fluid">
+                <div class="col-lg-6 quote-left">
+                    <h1>
+                        <span>Music</span> gives soul to the universe, <br>
+                        wings to the <span>mind</span>, flight <br>
+                        to the <span>imagination</span>.
+                    </h1>
                 </div>
-                <div class="col-lg-6 col-md-6 text-center">
-                    <div class="inner-column">
-                        <h1>Welcome To <span>Yamifood Restaurant</span></h1>
-                        <h4>Little Story</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-                        <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
-                        <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="inner-pt">
-                        <p>Sed tincidunt, neque at egestas imperdiet, nulla sapien blandit nunc, sit amet pulvinar orci nibh ut massa. Proin nec lectus sed nunc placerat semper. Duis hendrerit elit nec sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat porta nisi in gravida. Curabitur pulvinar ligula sed facilisis bibendum. Nullam vitae nulla elit. </p>
-                        <p>Integer purus velit, eleifend eu magna volutpat, porttitor blandit lectus. Aenean risus odio, efficitur quis erat eget, mattis tristique arcu. Fusce in ante enim. Integer consectetur elit nec laoreet rutrum. Mauris porta turpis nec tellus accumsan pellentesque. Morbi non quam tempus, convallis urna in, cursus mauris. </p>
-                    </div>
+                <div class="col-lg-6 quote-right">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End About -->
+    </section>
+    <!-- End quote Area -->
 
-    <!-- Start Menu -->
-    <div class="menu-box">
+
+    <!-- Start service Area -->
+    <section class="service-area section-gap" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="heading-title text-center">
-                        <h2>Special Menu</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="special-menu text-center">
-                        <div class="button-group filter-button-group">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".drinks">Drinks</button>
-                            <button data-filter=".lunch">Lunch</button>
-                            <button data-filter=".dinner">Dinner</button>
+                <div class="col-lg-4">
+                    <div class="single-service">
+                        <span class="lnr lnr-clock"></span>
+                        <h4>Openning Hours</h4>
+                        <p>
+                            Mon - Fri: 10.00am to 05.00pm
+                            Sat: 12.00pm to 03.00 pm
+                            Sunday Closed
+                        </p>
+                        <div class="overlay">
+                            <div class="text">
+                                <p>
+                                    Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features.that we use in life
+                                </p>
+                                <a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row special-list">
-                <div class="col-lg-4 col-md-6 special-grid drinks">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-01.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Drinks 1</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $7.79</h5>
+                <div class="col-lg-4">
+                    <div class="single-service">
+                        <span class="lnr lnr-rocket"></span>
+                        <h4>Ongoing Exhibitions</h4>
+                        <p>
+                            Mon - Fri: 10.00am to 05.00pm
+                            Sat: 12.00pm to 03.00 pm
+                            Sunday Closed
+                        </p>
+                        <div class="overlay">
+                            <div class="text">
+                                <p>
+                                    Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features.that we use in life
+                                </p>
+                                <a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 special-grid drinks">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-02.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Drinks 2</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $9.79</h5>
+                <div class="col-lg-4">
+                    <div class="single-service">
+                        <span class="lnr lnr-briefcase"></span>
+                        <h4>Openning Events</h4>
+                        <p>
+                            Mon - Fri: 10.00am to 05.00pm
+                            Sat: 12.00pm to 03.00 pm
+                            Sunday Closed
+                        </p>
+                        <div class="overlay">
+                            <div class="text">
+                                <p>
+                                    Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features.that we use in life
+                                </p>
+                                <a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 special-grid drinks">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-03.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Drinks 3</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $10.79</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 special-grid lunch">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-04.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Lunch 1</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $15.79</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 special-grid lunch">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-05.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Lunch 2</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $18.79</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 special-grid lunch">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-06.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Lunch 3</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $20.79</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 special-grid dinner">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-07.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Dinner 1</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $25.79</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 special-grid dinner">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-08.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Dinner 2</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $22.79</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 special-grid dinner">
-                    <div class="gallery-single fix">
-                        <img src="{{asset('assets/images/img-09.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
-                            <h4>Special Dinner 3</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $24.79</h5>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </div>
-    <!-- End Menu -->
+    </section>
+    <!-- End service Area -->
 
+    <!-- Start about info Area -->
+    <section class="section-gap info-area" id="about">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-40 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Few words about our Museum</h1>
+                        <p>Who are in extremely love with eco friendly system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-info row mt-40">
+                <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+                    <div class="info-thumb">
+                        <img src="{{asset('frontend/assets/img/pages/about-img.jpg')}}" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                    <div class="info-content">
+                        <h2 class="pb-30">We Realize that <br>
+                            there are reduced <br>
+                            Wastege Stand out</h2>
+                        <p>
+                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.
+                        </p>
+                        <br>
+                        <p>
+                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women. inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.
+                        </p>
+                        <br>
+                        <p>
+                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about info Area -->
 
     @endsection
 

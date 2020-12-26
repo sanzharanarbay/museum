@@ -9,324 +9,412 @@
 
     @section('content')
 
-        <!-- Start slides -->
-        <div id="slides" class="cover-slides">
-            <ul class="slides-container">
-                <li class="text-center">
-                    <img src="{{asset('assets/images/slider-01.jpg')}}" alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view  <br>
-                                    trends to see any changes in performance over time.</p>
-                                <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="text-center">
-                    <img src="{{asset('assets/images/slider-02.jpg')}}" alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view  <br>
-                                    trends to see any changes in performance over time.</p>
-                                <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="text-center">
-                    <img src="{{asset('assets/images/slider-03.jpg')}}" alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view  <br>
-                                    trends to see any changes in performance over time.</p>
-                                <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="slides-navigation">
-                <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <!-- End slides -->
-
-        <!-- Start About -->
-        <div class="about-section-box">
+        <!-- start banner Area -->
+        <section class="banner-area relative" id="home">
+            <div class="overlay overlay-bg"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="{{asset('assets/images/about-img.jpg')}}" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                        <div class="inner-column">
-                            <h1>Welcome To <span>Yamifood Restaurant</span></h1>
-                            <h4>Little Story</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-                            <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
-                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End About -->
-
-        <!-- Start QT -->
-        <div class="qt-box qt-background">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-left">
-                        <p class="lead ">
-                            " If you're not the one cooking, stay out of the way and compliment the chef. "
+                <div class="row fullscreen d-flex align-items-center justify-content-center">
+                    <div class="banner-content col-lg-8">
+                        <h6 class="text-white">Openning on 21st February, 2018</h6>
+                        <h1 class="text-white">
+                            Exhibition on Modern Era
+                        </h1>
+                        <p class="pt-20 pb-20 text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.  sed do eiusmod tempor incididunt..
                         </p>
-                        <span class="lead">Michael Strahan</span>
+                        <a href="#" class="primary-btn text-uppercase">Get Started</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End QT -->
+        </section>
+        <!-- End banner Area -->
 
-        <!-- Start Menu -->
-        <div class="menu-box">
+
+        <!-- Start service Area -->
+        <section class="service-area pt-100" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="heading-title text-center">
-                            <h2>Special Menu</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="special-menu text-center">
-                            <div class="button-group filter-button-group">
-                                <button class="active" data-filter="*">All</button>
-                                <button data-filter=".drinks">Drinks</button>
-                                <button data-filter=".lunch">Lunch</button>
-                                <button data-filter=".dinner">Dinner</button>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <span class="lnr lnr-clock"></span>
+                            <h4>Openning Hours</h4>
+                            <p>
+                                Mon - Fri: 10.00am to 05.00pm
+                                Sat: 12.00pm to 03.00 pm
+                                Sunday Closed
+                            </p>
+                            <div class="overlay">
+                                <div class="text">
+                                    <p>
+                                        Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features.that we use in life
+                                    </p>
+                                    <a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row special-list">
-                    <div class="col-lg-4 col-md-6 special-grid drinks">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-01.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Drinks 1</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $7.79</h5>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <span class="lnr lnr-rocket"></span>
+                            <h4>Ongoing Exhibitions</h4>
+                            <p>
+                                Mon - Fri: 10.00am to 05.00pm
+                                Sat: 12.00pm to 03.00 pm
+                                Sunday Closed
+                            </p>
+                            <div class="overlay">
+                                <div class="text">
+                                    <p>
+                                        Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features.that we use in life
+                                    </p>
+                                    <a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid drinks">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-02.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Drinks 2</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $9.79</h5>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <span class="lnr lnr-briefcase"></span>
+                            <h4>Openning Events</h4>
+                            <p>
+                                Mon - Fri: 10.00am to 05.00pm
+                                Sat: 12.00pm to 03.00 pm
+                                Sunday Closed
+                            </p>
+                            <div class="overlay">
+                                <div class="text">
+                                    <p>
+                                        Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features that we use in life Here, I focus on a range of items and features.that we use in life
+                                    </p>
+                                    <a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid drinks">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-03.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Drinks 3</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $10.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid lunch">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-04.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Lunch 1</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $15.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid lunch">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-05.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Lunch 2</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $18.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid lunch">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-06.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Lunch 3</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $20.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid dinner">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-07.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Dinner 1</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $25.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid dinner">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-08.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Dinner 2</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $22.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 special-grid dinner">
-                        <div class="gallery-single fix">
-                            <img src="{{asset('assets/images/img-09.jpg')}}" class="img-fluid" alt="Image">
-                            <div class="why-text">
-                                <h4>Special Dinner 3</h4>
-                                <p>Sed id magna vitae eros sagittis euismod.</p>
-                                <h5> $24.79</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Menu -->
-
-        <!-- Start Gallery -->
-        <div class="gallery-box">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="heading-title text-center">
-                            <h2>Gallery</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tz-gallery">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4 col-lg-4">
-                            <a class="lightbox" href="{{asset('assets/images/gallery-img-01.jpg')}}">
-                                <img class="img-fluid" src="{{asset('assets/images/gallery-img-01.jpg')}}" alt="Gallery Images">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a class="lightbox" href="{{asset('assets/images/gallery-img-02.jpg')}}">
-                                <img class="img-fluid" src="{{asset('assets/images/gallery-img-02.jpg')}}" alt="Gallery Images">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a class="lightbox" href="{{asset('assets/images/gallery-img-03.jpg')}}">
-                                <img class="img-fluid" src="{{asset('assets/images/gallery-img-03.jpg')}}" alt="Gallery Images">
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-4 col-lg-4">
-                            <a class="lightbox" href="{{asset('assets/images/gallery-img-04.jpg')}}">
-                                <img class="img-fluid" src="{{asset('assets/images/gallery-img-04.jpg')}}" alt="Gallery Images">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a class="lightbox" href="{{asset('assets/images/gallery-img-05.jpg')}}">
-                                <img class="img-fluid" src="{{asset('assets/images/gallery-img-05.jpg')}}" alt="Gallery Images">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a class="lightbox" href="{{asset('assets/images/gallery-img-06.jpg')}}">
-                                <img class="img-fluid" src="{{asset('assets/images/gallery-img-06.jpg')}}" alt="Gallery Images">
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Gallery -->
+        </section>
+        <!-- End service Area -->
 
-        <!-- Start Customer Reviews -->
-        <div class="customer-reviews-box">
+        <!-- Start quote Area -->
+        <section class="quote-area section-gap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="heading-title text-center">
-                            <h2>Customer Reviews</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <div class="col-lg-6 quote-left">
+                        <h1>
+                            <span>Music</span> gives soul to the universe, <br>
+                            wings to the <span>mind</span>, flight <br>
+                            to the <span>imagination</span>.
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 quote-right">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End quote Area -->
+
+        <!-- Start exibition Area -->
+        <section class="exibition-area section-gap" id="exhibitions">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-60 col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Ongoing Exhibitions from the scratch</h1>
+                            <p>Who are in extremely love with eco friendly system.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 mr-auto ml-auto text-center">
-                        <div id="reviews" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner mt-4">
-                                <div class="carousel-item text-center active">
-                                    <div class="img-box p-1 border rounded-circle m-auto">
-                                        <img class="d-block w-100 rounded-circle" src="{{asset('assets/images/profile-1.jpg')}}" alt="">
-                                    </div>
-                                    <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>
-                                    <h6 class="text-dark m-0">Web Developer</h6>
-                                    <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                                </div>
-                                <div class="carousel-item text-center">
-                                    <div class="img-box p-1 border rounded-circle m-auto">
-                                        <img class="d-block w-100 rounded-circle" src="{{asset('assets/images/profile-3.jpg')}}" alt="">
-                                    </div>
-                                    <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>
-                                    <h6 class="text-dark m-0">Web Designer</h6>
-                                    <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                                </div>
-                                <div class="carousel-item text-center">
-                                    <div class="img-box p-1 border rounded-circle m-auto">
-                                        <img class="d-block w-100 rounded-circle" src="{{asset('assets/images/profile-7.jpg')}}" alt="">
-                                    </div>
-                                    <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>
-                                    <h6 class="text-dark m-0">Seo Analyst</h6>
-                                    <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                <span class="sr-only">Next</span>
-                            </a>
+                    <div class="active-exibition-carusel">
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e1.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e2.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e3.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e1.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e2.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e3.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+                        <div class="single-exibition item">
+                            <img src="{{asset('frontend/assets/img/e1.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+
+                        <div class="single-exibition item">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/e2.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
+                        </div>
+
+                        <div class="single-exibition item">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/e3.jpg')}}" alt="">
+                            <ul class="tags">
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Life style</a></li>
+                            </ul>
+                            <a href="#"><h4>Portable latest blog for women</h4></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                            </p>
+                            <h6 class="date">31st January, 2018</h6>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Customer Reviews -->
+        </section>
+        <!-- End exibition Area -->
+
+        <!-- Start upcoming-event Area -->
+        <section class="upcoming-event-area section-gap" id="events">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-60 col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Checkout our Upcoming Events</h1>
+                            <p>Who are in extremely love with eco friendly system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 event-left">
+                        <div class="single-events">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/u1.jpg')}}" alt="">
+                            <a href="#"><h4>Event on the rock solid carbon</h4></a>
+                            <h6><span>21st February</span> at Central government museum</h6>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+                            </p>
+                            <a href="#" class="primary-btn text-uppercase">View Details</a>
+                        </div>
+                        <div class="single-events">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/u3.jpg')}}" alt="">
+                            <a href="#"><h4>Event on the rock solid carbon</h4></a>
+                            <h6><span>21st February</span> at Central government museum</h6>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+                            </p>
+                            <a href="#" class="primary-btn text-uppercase">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 event-right">
+                        <div class="single-events">
+                            <a href="#"><h4>Event on the rock solid carbon</h4></a>
+                            <h6><span>21st February</span> at Central government museum</h6>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+                            </p>
+                            <a href="#" class="primary-btn text-uppercase">View Details</a>
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/u2.jpg')}}" alt="">
+                        </div>
+                        <div class="single-events">
+
+                            <a href="#"><h4>Event on the rock solid carbon</h4></a>
+                            <h6><span>21st February</span> at Central government museum</h6>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+                            </p>
+                            <a href="#" class="primary-btn text-uppercase">View Details</a>
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/u4.jpg')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End upcoming-event Area -->
+
+        <!-- Start blog Area -->
+        <section class="blog-area section-gap" id="blog">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-70 col-lg-8">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Latest From Our Blog</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/b1.jpg')}}" alt="">
+                        </div>
+                        <p class="date">10 Jan 2018</p>
+                        <a href="#"><h4>Addiction When Gambling
+                                Becomes A Problem</h4></a>
+                        <p>
+                            inappropriate behavior ipsum dolor sit amet, consectetur.
+                        </p>
+                        <div class="meta-bottom d-flex justify-content-between">
+                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/b2.jpg')}}" alt="">
+                        </div>
+                        <p class="date">10 Jan 2018</p>
+                        <a href="#"><h4>Addiction When Gambling
+                                Becomes A Problem</h4></a>
+                        <p>
+                            inappropriate behavior ipsum dolor sit amet, consectetur.
+                        </p>
+                        <div class="meta-bottom d-flex justify-content-between">
+                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/b3.jpg')}}" alt="">
+                        </div>
+                        <p class="date">10 Jan 2018</p>
+                        <a href="#"><h4>Addiction When Gambling
+                                Becomes A Problem</h4></a>
+                        <p>
+                            inappropriate behavior ipsum dolor sit amet, consectetur.
+                        </p>
+                        <div class="meta-bottom d-flex justify-content-between">
+                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="{{asset('frontend/assets/img/b4.jpg')}}" alt="">
+                        </div>
+                        <p class="date">10 Jan 2018</p>
+                        <a href="#"><h4>Addiction When Gambling
+                                Becomes A Problem</h4></a>
+                        <p>
+                            inappropriate behavior ipsum dolor sit amet, consectetur.
+                        </p>
+                        <div class="meta-bottom d-flex justify-content-between">
+                            <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                            <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End blog Area -->
+
+        <!-- Start gallery Area -->
+        <section class="gallery-area section-gap" id="gallery">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-70 col-lg-8">
+                        <div class="title text-center">
+                            <h1 class="mb-10 text-white">Our Exhibition Gallery</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="grid-container" class="row">
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g1.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g1.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g2.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g2.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g3.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g3.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g4.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g4.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g5.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g5.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g6.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g6.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g7.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g7.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g8.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g8.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g9.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g9.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g10.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g10.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g11.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g11.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g12.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g12.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g4.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g4.jpg')}}"></a>
+                    <a class="single-gallery" href="{{asset('frontend/assets/img/g5.jpg')}}"><img class="grid-item" src="{{asset('frontend/assets/img/g5.jpg')}}"></a>
+                </div>
+            </div>
+        </section>
+        <!-- End gallery Area -->
 
 
     @endsection

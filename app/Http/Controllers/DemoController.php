@@ -28,16 +28,16 @@ class DemoController extends Controller
         return view('modules.front.pages.gallery');
     }
 
-    public function menu(){
-        return view('modules.front.pages.menu');
+    public function events(){
+        return view('modules.front.pages.events');
     }
 
-    public function reservation(){
-        return view('modules.front.pages.reservation');
+    public function museumitems(){
+        return view('modules.front.pages.museumitems');
     }
 
-    public function staff(){
-        return view('modules.front.pages.staff');
+    public function news(){
+        return view('modules.front.pages.news');
     }
 
 }
