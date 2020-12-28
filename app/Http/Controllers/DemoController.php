@@ -40,5 +40,8 @@ class DemoController extends Controller
         return view('modules.front.pages.news');
     }
 
+    public function virtualtour(){
+        return view('modules.front.pages.tour');
+    }
 }
 

@@ -22,6 +22,7 @@ Route::get('/museumitems','DemoController@museumitems');
 Route::get('/news','DemoController@news');
 Route::get('/gallery','DemoController@gallery');
 Route::get('/contact','DemoController@contact');
+Route::get('/virtual-tour','DemoController@virtualtour');
 
 Auth::routes(
     [
