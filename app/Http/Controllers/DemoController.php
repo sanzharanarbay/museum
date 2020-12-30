@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Item;
 use FG\ASN1\Universal\Sequence;
 use FreeDSx\Asn1\Encoders;
 use Illuminate\Http\Request;
@@ -35,7 +36,8 @@ class DemoController extends Controller
     }
 
     public function museumitems(){
-        return view('modules.front.pages.museumitems');
+        $items = Item::orderBy('id','DESC')->get();
+        return view('modules.front.pages.museumitems', compact('items'));
     }
 
     public function news(){
