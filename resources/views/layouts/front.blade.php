@@ -14,7 +14,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Art Museum</title>
+    <title>Almaty Museum</title>
 
     @include('modules.front.partials.style')
     @stack('styles')

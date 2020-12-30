@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login Art Museum</title>
+    <title>Login Almaty Museum</title>
     <meta name="description" content="Login Geronimo Lap">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

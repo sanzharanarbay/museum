@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Art Museum Admin Panel</title>
+    <title>Almaty Museum Admin Panel</title>
 
     <!-- Scripts -->
 
