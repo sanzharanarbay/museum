@@ -39,7 +39,7 @@
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Gallery</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="{{ route('categories.index') }}">Manage Gallery</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ route('gallery.index') }}">Manage Gallery</a></li>
                     </ul>
                 </li>
 

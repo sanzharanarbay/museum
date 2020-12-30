@@ -37,5 +37,6 @@ Route::group(['middleware' => ['auth','preventBackHistory'], 'namespace' => 'Adm
     Route::resource('permissions', 'PermissionController');
     Route::resource('categories', 'CategoryController');
     Route::resource('items', 'ItemController');
+    Route::resource('gallery', 'GalleryController');
 });
 

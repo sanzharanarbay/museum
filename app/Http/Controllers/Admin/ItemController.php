@@ -98,7 +98,7 @@ class ItemController extends Controller
         }
         $item->update();
         return redirect()->route('items.index')
-            ->with('success','Item created successfully');
+            ->with('success','Item updated successfully');
     }
 
     public function destroy($id){
