@@ -40,7 +40,7 @@ class DemoController extends Controller
         return view('modules.front.pages.museumitems', compact('items'));
     }
 
-    public function news(){
+    public function announcements(){
         return view('modules.front.pages.news');
     }
 
