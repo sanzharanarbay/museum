@@ -28,9 +28,9 @@
                     <li class="menu-active"><a href="{{url('/')}}">Home</a></li>
                     <li><a href="{{url('/about')}}">About</a></li>
                     <li><a href="{{url('/virtual-tour')}}">Virtual Tour</a></li>
-                    <li><a href="{{url('/gallery')}}">Gallery</a></li>
+                    <li><a href="{{url('/gallery-items')}}">Gallery</a></li>
                     <li><a href="{{url('/events')}}">Events</a></li>
-                    <li><a href="{{url('/museumitems')}}">Museum Items</a></li>
+                    <li><a href="{{url('/museum-items')}}">Museum Items</a></li>
                     <li><a href="{{url('/news')}}">News</a></li>
                     <li><a href="{{url('/contact')}}">Contact</a></li>
                     <li>

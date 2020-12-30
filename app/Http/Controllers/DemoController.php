@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use FG\ASN1\Universal\Sequence;
 use FreeDSx\Asn1\Encoders;
 use Illuminate\Http\Request;
@@ -24,8 +25,9 @@ class DemoController extends Controller
         return view('modules.front.pages.contact');
     }
 
-    public function gallery(){
-        return view('modules.front.pages.gallery');
+    public function galleryitems(){
+        $galleries = Gallery::orderBy('id','DESC')->get();
+        return view('modules.front.pages.gallery', compact('galleries'));
     }
 
     public function events(){
