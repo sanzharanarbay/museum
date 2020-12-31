@@ -1,9 +1,8 @@
 <!-- Header-->
-<header id="header" class="header">
+<header id="header" class="header bg-dark">
     <div class="top-left">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="./"><img src="{{asset('admin/images/logo.png')}}" alt="Logo"></a>
-            <a class="navbar-brand hidden" href="./"><img src="{{asset('admin/images/logo2.png')}}" alt="Logo"></a>
+        <div class="navbar-header bg-dark">
+            <a class="navbar-brand" href="{{'/home'}}"><img src="{{asset('frontend/assets/img/logo.png')}}" alt="Logo"></a>
             <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
         </div>
     </div>

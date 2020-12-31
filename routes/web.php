@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','DemoController@index');
 Route::get('/about','DemoController@about');
-Route::get('/events','DemoController@events');
+Route::get('/upcoming-events','DemoController@events');
 Route::get('/museum-items','DemoController@museumitems');
 Route::get('/announcements','DemoController@announcements');
 Route::get('/gallery-items','DemoController@galleryitems');
@@ -39,5 +39,6 @@ Route::group(['middleware' => ['auth','preventBackHistory'], 'namespace' => 'Adm
     Route::resource('items', 'ItemController');
     Route::resource('gallery', 'GalleryController');
     Route::resource('news', 'NewsController');
+    Route::resource('events', 'EventController');
 });
 
