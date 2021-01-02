@@ -51,5 +51,10 @@ class DemoController extends Controller
     public function virtualtour(){
         return view('modules.front.pages.tour');
     }
+
+    public function singleEvent($unique_id){
+        $event = Event::with('user')->where('unique_id', $unique_id)->firstOrFail();
+        return view('modules.front.pages.single-event', compact('event'));
+    }
 }
 

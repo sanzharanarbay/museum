@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','DemoController@index');
 Route::get('/about','DemoController@about');
 Route::get('/upcoming-events','DemoController@events');
+Route::get('/upcoming-events/{unique_id}','DemoController@singleEvent')->name('single.event');
 Route::get('/museum-items','DemoController@museumitems');
 Route::get('/announcements','DemoController@announcements');
 Route::get('/gallery-items','DemoController@galleryitems');

@@ -43,11 +43,15 @@
                     <div class="single-events">
                         <img class="img-fluid" src="{{asset($event->image_path)}}" alt="">
                         <a href="#"><h4>{{$event->name}}</h4></a>
-                        <h6><span>{{$event->start_date}}</span> until {{$event->end_date}} </h6>
+                        <h6><span>{{date('d, F Y', strtotime($event->start_date))}}</span> until {{date('d, F Y', strtotime($event->end_date))}} </h6>
                         <p>
                             {{$event->description}}
                         </p>
-                        <a href="#" class="primary-btn text-uppercase">View Details</a>
+                        <p>
+                            You can view event by QR code: &nbsp; &nbsp;
+                            {!! QrCode::size(100)->generate(URL::to('/upcoming-events'). '/' . $event->unique_id); !!}
+                        </p>
+                        <a href="{{route('single.event', $event->unique_id)}}" class="primary-btn text-uppercase">View Details</a>
                     </div>
                         @endif
                         <br>
@@ -61,12 +65,16 @@
                     @if($event->id %2 != 0)
                     <div class="single-events">
                         <a href="#"><h4>{{$event->name}}</h4></a>
-                        <h6><span>{{$event->start_date}}</span> until {{$event->end_date}}</h6>
+                        <h6><span>{{date('d, F Y', strtotime($event->start_date))}}</span> until {{date('d, F Y', strtotime($event->end_date))}}</h6>
                         <p>
                             {{$event->description}}
                         </p>
-                        <a href="#" class="primary-btn text-uppercase">View Details</a>
-                        <img class="img-fluid" src="{{asset($event->image_path)}}" alt="">
+                        <p>
+                            You can view event by QR code: &nbsp; &nbsp;
+                            {!! QrCode::size(100)->generate(URL::to('/upcoming-events'). '/' . $event->unique_id); !!}
+                        </p>
+                        <a href="{{route('single.event', $event->unique_id)}}" class="primary-btn text-uppercase">View Details</a>
+                        <img class="img-fluid" src="{{asset($event->image_path)}}" alt="Img">
                     </div>
                         @endif
                         <br>

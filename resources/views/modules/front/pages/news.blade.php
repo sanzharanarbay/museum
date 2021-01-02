@@ -54,15 +54,6 @@
                                         <li><a href="#"><span class="lnr lnr-bubble"></span> 06 Comments</a></li>
                                     </ul>
                                 </div>
-                                <div class="social-wrap col-lg-6">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
-
-                                </div>
                             </div>
                         </div>
                     </div>
