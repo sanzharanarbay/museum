@@ -20,6 +20,7 @@
                                 <div class="location text-sm-center">
                                     <i class="fa fa-font"></i>   {{ $event->name }} <br>
                                     <i class="fa fa-book"></i>   {{ $event->description }} <br>
+                                    <i class="fa fa-qrcode" aria-hidden="true"></i> {!! QrCode::size(150)->generate(URL::to('/upcoming-events'). '/' . $event->unique_id); !!} <br>
                                     <i class="fa fa-calendar-o"></i>   {{ $event->start_date}} <br>
                                     <i class="fa fa-calendar"></i>   {{ $event->end_date }} <br>
                                     <i class="fa fa-list"></i>   {{ $event->partner_name }} <br>

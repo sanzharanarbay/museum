@@ -15,9 +15,10 @@
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
                     <h1 class="text-white">
-                        Buy Tickets
+                        Museum Artifacts
                     </h1>
-                    <p class="text-white link-nav"><a href="{{url('/')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="ticket.html"> Tickets</a></p>
+                    <p class="text-white link-nav"><a href="{{url('/')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>
+                        <a href="{{url('/museum-items')}}"> Museum Items</a></p>
                 </div>
             </div>
         </div>
@@ -37,84 +38,21 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($items as $item)
                 <div class="col-lg-4 col-md-6 single-exhibition">
                     <div class="thumb">
-                        <img class="img-fluid" src="{{'frontend/assets/img/pages/ex1.jpg'}}" alt="">
+                        <img class="img-fluid" src="{{$item->image}}" alt="">
                     </div>
                     <p class="date">10 Jan 2018</p>
-                    <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+                    <a href="#"><h4>{{$item->name}}</h4></a>
                     <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                      {{$item->description}}
                     </p>
                     <div class="meta-bottom d-flex justify-content-start">
-                        <p class="price">$45.00</p>
+                        <p class="price">$ {{$item->price}}</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 single-exhibition">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{'frontend/assets/img/pages/ex2.jpg'}}" alt="">
-                    </div>
-                    <p class="date">10 Jan 2018</p>
-                    <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-start">
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 single-exhibition">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{'frontend/assets/img/pages/ex3.jpg'}}" alt="">
-                    </div>
-                    <p class="date">10 Jan 2018</p>
-                    <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-start">
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 single-exhibition">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{'frontend/assets/img/pages/ex4.jpg'}}" alt="">
-                    </div>
-                    <p class="date">10 Jan 2018</p>
-                    <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-start">
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 single-exhibition">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{'frontend/assets/img/pages/ex5.jpg'}}" alt="">
-                    </div>
-                    <p class="date">10 Jan 2018</p>
-                    <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-start">
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 single-exhibition">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{'frontend/assets/img/pages/ex6.jpg'}}" alt="">
-                    </div>
-                    <p class="date">10 Jan 2018</p>
-                    <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-start">
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
+                    @endforeach
             </div>
         </div>
     </section>

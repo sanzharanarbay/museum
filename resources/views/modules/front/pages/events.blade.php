@@ -38,46 +38,43 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 event-left">
+                    @foreach($events as $event)
+                    @if($event->id % 2 == 0)
                     <div class="single-events">
-                        <img class="img-fluid" src="{{asset('frontend/assets/img/u1.jpg')}}" alt="">
-                        <a href="#"><h4>Event on the rock solid carbon</h4></a>
-                        <h6><span>21st February</span> at Central government museum</h6>
+                        <img class="img-fluid" src="{{asset($event->image_path)}}" alt="">
+                        <a href="#"><h4>{{$event->name}}</h4></a>
+                        <h6><span>{{$event->start_date}}</span> until {{$event->end_date}} </h6>
                         <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+                            {{$event->description}}
                         </p>
                         <a href="#" class="primary-btn text-uppercase">View Details</a>
                     </div>
-                    <div class="single-events">
-                        <img class="img-fluid" src="{{asset('frontend/assets/img/u3.jpg')}}" alt="">
-                        <a href="#"><h4>Event on the rock solid carbon</h4></a>
-                        <h6><span>21st February</span> at Central government museum</h6>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
-                        </p>
-                        <a href="#" class="primary-btn text-uppercase">View Details</a>
-                    </div>
+                        @endif
+                        <br>
+                        @endforeach
+                        <br>
                 </div>
+                <br>
+                <br>
                 <div class="col-lg-6 event-right">
+                    @foreach($events as $event)
+                    @if($event->id %2 != 0)
                     <div class="single-events">
-                        <a href="#"><h4>Event on the rock solid carbon</h4></a>
-                        <h6><span>21st February</span> at Central government museum</h6>
+                        <a href="#"><h4>{{$event->name}}</h4></a>
+                        <h6><span>{{$event->start_date}}</span> until {{$event->end_date}}</h6>
                         <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+                            {{$event->description}}
                         </p>
                         <a href="#" class="primary-btn text-uppercase">View Details</a>
-                        <img class="img-fluid" src="{{asset('frontend/assets/img/u2.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset($event->image_path)}}" alt="">
                     </div>
-                    <div class="single-events">
-
-                        <a href="#"><h4>Event on the rock solid carbon</h4></a>
-                        <h6><span>21st February</span> at Central government museum</h6>
-                        <p>
-                            inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
-                        </p>
-                        <a href="#" class="primary-btn text-uppercase">View Details</a>
-                        <img class="img-fluid" src="{{asset('frontend/assets/img/u4.jpg')}}" alt="">
-                    </div>
+                        @endif
+                        <br>
+                    @endforeach
+                        <br>
                 </div>
+                <br>
+                <br>
             </div>
         </div>
     </section>

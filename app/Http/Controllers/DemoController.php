@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use App\Models\Gallery;
 use App\Models\Item;
+use App\Models\News;
 use FG\ASN1\Universal\Sequence;
 use FreeDSx\Asn1\Encoders;
 use Illuminate\Http\Request;
@@ -32,7 +34,8 @@ class DemoController extends Controller
     }
 
     public function events(){
-        return view('modules.front.pages.events');
+        $events = Event::all();
+        return view('modules.front.pages.events', compact('events'));
     }
 
     public function museumitems(){
@@ -41,7 +44,8 @@ class DemoController extends Controller
     }
 
     public function announcements(){
-        return view('modules.front.pages.news');
+        $announcements = News::orderBy('id', 'DESC')->get();
+        return view('modules.front.pages.news', compact('announcements'));
     }
 
     public function virtualtour(){
